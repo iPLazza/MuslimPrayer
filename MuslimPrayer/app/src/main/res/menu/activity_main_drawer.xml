@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/grp1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/house"
+            android:title="ACCEUIL" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/sittingonthefloorandreading"
+            android:title="@string/recitateurs" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/readingquran"
+            android:title="@string/masahif" />
+        <item
+            android:id="@+id/hadith"
+            android:icon="@drawable/qudio"
+            android:title="AUDIO" />
+        <item
+            android:id="@+id/books"
+            android:icon="@drawable/books"
+            android:title="LIVRES" />
+    </group>
+    <group
+        android:id="@+id/grp2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/priere"
+            android:icon="@drawable/islamicprayer"
+            android:title="@string/salattime" />
+
+        <item
+            android:id="@+id/names"
+            android:icon="@drawable/allahword"
+            android:title="@string/allah_name" />
+        <item
+            android:id="@+id/tasbih"
+            android:icon="@drawable/prayerbeads"
+            android:title="@string/tasbih" />
+        <item
+            android:id="@+id/qiblah"
+            android:icon="@drawable/qiblacompass"
+            android:title="@string/qiblah" />
+    </group>
+
+    <group
+        android:id="@+id/grp3"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/rate"
+            android:icon="@drawable/star"
+            android:title="RATE US" />
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/star"
+            android:title="A propos" />
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/network"
+            android:title="PARTAGER" />
+    </group>
+</menu>

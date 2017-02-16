@@ -1,0 +1,105 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="1dp"
+android:background="@drawable/cover"
+    android:layout_marginRight="1dp">
+
+    <ImageView
+        android:id="@+id/iv_artwork"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_opacity_66">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/grid_item_padding">
+
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/favorite"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/listen" />
+
+        <ImageView
+            android:id="@+id/listen"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/ic_menu_share"
+            android:tint="@color/white_text"
+            android:layout_above="@+id/share"
+            android:layout_alignStart="@+id/imageView5" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toStartOf="@+id/share"
+            android:text="العشر الأواخر وعيد الفطر"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white_text"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:text="خطبة جمعة بالمسجد النبوي؛ ألقاها الشيخ الثبيتي - أثابه الله - في يوم 23 رمضان 1436هـ، تحدَّث فيها عن العشر الأواخر من شهر رمضان، وما خصَّنا الله فيها من الخيرات والبركات، وحضَّ على اغتنامها والعمل فيها ابتغاءَ وجه الله تعالى، طلبًا لمرضاته، وخوفًا من عقابِه، كما بيَّن آداب وأحكام عيد الفطر."
+            android:textAlignment="gravity"
+            android:textColor="@color/white_text"
+            android:textSize="16sp"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/listen"
+            android:layout_alignEnd="@+id/textView5"
+            android:layout_alignBottom="@+id/share"
+            android:layout_alignTop="@+id/imageView5" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/cloudcomputing"
+            android:tint="@color/white_text"
+            android:layout_above="@+id/listen"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:text="العشر الأواخر وعيد الفطر"
+            android:textAlignment="center"
+            android:textColor="@color/white_text"
+            android:textSize="18sp"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignEnd="@+id/textView4" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>

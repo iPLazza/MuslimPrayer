@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bk2"
+    tools:context="com.layali.codedreamer.muslim.tasbeh">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView0"
+        android:src="@drawable/top"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginLeft="-7dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/sebh_balls"
+        android:layout_gravity="center_horizontal|top"></ImageView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/sebh_balls"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:text="0"
+        android:id="@+id/number"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="left|center_vertical"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/lblrefresh"
+        android:layout_gravity="right|center_vertical"
+        android:src="@drawable/refrech"
+        android:layout_marginRight="20dp"/>
+
+
+    <View
+        android:id="@+id/alphaColorView"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="#a40404" />
+
+</FrameLayout>

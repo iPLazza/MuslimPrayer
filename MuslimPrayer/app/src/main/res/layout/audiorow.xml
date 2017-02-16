@@ -1,0 +1,91 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:autofit="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp">
+
+    <ImageView
+        android:id="@+id/iv_artwork"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_opacity_66">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/grid_item_padding">
+
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="right|bottom"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/favorite" />
+
+        <ImageView
+            android:id="@+id/listen"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/ic_menu_share"
+            android:tint="@color/white_text" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="2dp"
+            android:layout_toStartOf="@+id/share"
+            android:text="العشر الأواخر وعيد الفطر"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white_text"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:layout_toStartOf="@+id/listen"
+            android:maxLines="5"
+            android:text="خطبة جمعة بالمسجد النبوي؛ ألقاها الشيخ الثبيتي - أثابه الله - في يوم 23 رمضان 1436هـ، تحدَّث فيها عن العشر الأواخر من شهر رمضان، وما خصَّنا الله فيها من الخيرات والبركات، وحضَّ على اغتنامها والعمل فيها ابتغاءَ وجه الله تعالى، طلبًا لمرضاته، وخوفًا من عقابِه، كما بيَّن آداب وأحكام عيد الفطر."
+            android:textAlignment="gravity"
+            android:textColor="@color/white_text"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right|bottom"
+            android:src="@drawable/listen2"
+            android:tint="@color/white_text" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
